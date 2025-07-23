@@ -32,3 +32,31 @@
 //     { id: 4, name: 'Hank', department: 'IT' }
 // ]
 
+let arr = [
+    {
+        id: 1,
+        name: "John",
+        department: "HR",
+    },
+    {
+        id: 2,
+        name: "Alice",
+        department: "IT",
+    },
+    {
+        id: 3,
+        name: "Bob",
+        department: "Finance",
+    },
+    {
+        id: 4,
+        name: "Hank",
+        department: "IT",
+    },
+]
+let property = "department";
+let value = "IT";
+
+let result = arr.filter((prop) => prop[property] === value);
+
+console.log(result);
