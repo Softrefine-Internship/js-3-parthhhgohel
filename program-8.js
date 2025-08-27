@@ -46,7 +46,8 @@ const calc = function (target) {
     arr.forEach((ele) => {
         count += ele[target];
     })
-    return count;
+    return `total value for "${target}": ${count}`;
 };
 
-console.log(calc("quantity"));
+let result = calc("price");
+console.log(result);
